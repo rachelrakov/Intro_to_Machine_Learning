@@ -14,3 +14,6 @@ This is where there is a picture!
 ![Table showing how to describe fruit](fruit.png)
 
 Then more text
+'''python
+results go here
+'''
