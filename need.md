@@ -1,6 +1,10 @@
 # What You Need
 
-Lead in text to the code things.
+What will you need for this workshop?
+- Python (I recommend using Python 3)
+- The Natural Language Toolkit
+- Sckit-Learn (comes with Anaconda - can also be installed seperately
+- Pandas (comes with Anaconda - can also be installed seperately)
 
 ```
 import nltk
