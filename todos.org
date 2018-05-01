@@ -1,0 +1,7 @@
+* TODO look into image rights
+* TODO hannah: give installation instruction
+* TODO get permission for images
+* TODO longer alt text
+* TODO Use short headdings people could glance at...if the heading is long and filled with info put it below
+* TODO Make the first heading on a page a # (single hash) and the others ##
+* TODO 

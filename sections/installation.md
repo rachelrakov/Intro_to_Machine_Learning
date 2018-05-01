@@ -1,54 +1,10 @@
+# Installation and Setup
 
-# Introduction to Machine Learning with scikit-learn
-### Rachel Rakov & Hannah Aizenman
-Welcome!  In this workshop, we are going to learn how to go through the process of doing *machine learning* on a set of data.   To do so, we will download a *corpus* of text data to work with, extract *features* from this data, and do *supervised* machine learning to our data, using a mathmatical algorithm to train a*classifier* which will then classify previously unseen data into a set of predefined categories.
+Note that you can also download the [Jupyter Notebook](intro_to_ml_with_python.ipynb) for this lesson to follow along
 
+## Python 3
 
-"Machine learning is a research field that sits at the intersections of statistics, artificial intelligence, and computer science.  It is also known as *predictive analystics* or *statistical learning*."
-
--- Andreas Mueller, "Introduction to Machine Learning with Python".
-
-## Key terms
-- *machine learning*: An application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed
-
-
-- *corpus*: A large collection of data.  In our case, this will be text data (although a corpus can contain any type of data)
-
-
-- *features*: Properties that describe data entities for machine learning
-
-
-- *feature representation, feature vector*: A set of features
-
-
-- *supervised machine learning*:  A machine learning task of learning a function that maps an input to an output based on example input-output pairs
-
-
-- *unsupervised machine learning*: A machine learning task used to draw inferences from datasets consisting of input data without labeled responses (lacks input-output pairs; only has input data)
-
-
-- *algorithm*: A process or set of rules to be followed in calculations (or other problem-solving operations), particularly by a computer
-
-
-- *classification*: An machine learning task used to predict a class label, which is a choice from a predefined list of possibilities
-
-Sources: Wikipedia, Andreas Mueller's "Introduction to Machine Learning with Python"
-
-
-## Goals of this workshop
-In this workshop, you will learn the following skills:
-- How to use skills from the NLTK workshop to build features for a classification task
-- How to build a text classification system that can predict whether sentences belong to one category ("news") or another ("romance")
-- How to prepare data for machine learning using *pandas*, a package for Python that helps to organize your data
-    - Looks similar to an Excel spreadsheet
-- How to use the scikit-learn package for Python to perform machine learning on the data
-- How to evaluate the results of the classifier, helping to decide whether the classifier is effective
-- How to adjust paramaters of a classifier to improve accuracy
-
-### What do you need for this workshop?
-- Python 3
-    - You can also download the Jupyter Notebook for this lesson to follow along
-- The Natural Lanugage Toolkit
+The Natural Lanugage Toolkit
     - We will be using both corpora and tools from this package
 - pandas 
     - We will use this for data processing
@@ -60,7 +16,10 @@ In this workshop, you will learn the following skills:
     - We will use this for machine learning
     - Comes with Anaconda 
 
-### Let's get started by importing some packages we will need for this workshop!
+## Importing Packages
+
+Let's get started by importing some packages we will need for this workshop.
+
 - The Brown Corpus: A text corpus of American English, split into fifteen different categories
 - Part of speech taggers (POS): prebuilt functions that are designed to determine the part of speech of every word in the sentence you give them
 - Pandas as pd: importing the Pandas toolkit and renaming it pd, so we don't have to type too much
@@ -71,9 +30,6 @@ In this workshop, you will learn the following skills:
     We use the above code to ensure our images display clearly in the Jupyter notebook.
 
 - sklearn: the scikit-learn machine learning toolkit
-
-
-
 
 ```python
 import nltk
