@@ -1,3 +1,5 @@
 # Resources
 
-Andreas Mueller's "Introduction to Machine Learning with Python"
+"Introduction to Machine Learning with Python", Andreas C. Muller and Sarah Guido. O'Reilly, 2017.
+
+"LING 83800: Methods in Computational Linguistics II", Andrew Rosenberg.  http://eniac.cs.qc.cuny.edu/andrew/methods2/, 2014.
