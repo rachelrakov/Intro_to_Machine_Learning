@@ -1,24 +1,24 @@
-## Supervised Classification Algorithm with sklearn!
+# Supervised Classification Algorithm with sklearn!
 
 One of the best things about sklearn is the simplicity of its syntax.
 
 To do machine learning with sklearn, follow these three steps (the function names remain the same, regardless of the classifier you use!):
 
-### Step 1:  Import your desired classifier
+## Step 1:  Import your desired classifier
 
 
 ```python
 from sklearn.svm import LinearSVC
 ```
 
-### Step 2: Create an instance of your machine learning algorithm
+## Step 2: Create an instance of your machine learning algorithm
 
 
 ```python
 classifier = LinearSVC()
 ```
 
-### Step 3:  Fit your data to your classifier (train), predict labels for unseen data (test), and score!
+## Step 3:  Fit your data to your classifier (train), predict labels for unseen data (test), and score!
 
 
 ```python
@@ -53,7 +53,7 @@ classifier.score(X_test, y_test)
 
 
 
-Right now, our classifier can predict previously unseen news and data 
+Right now, our classifier can correctly predict previously unseen news and data about 71% of the time.  We can get more information about how we doing by creating a confusion matrix. This confusion matrix shows how many times we are predicting categories correctly.
 
 
 ```python
@@ -72,7 +72,7 @@ confusion_matrix
 |predicted news | 759 | 397 |
 |predicted romance|282 | 826|
 
-## Add visualization of the decision boundaries (Hannah)
+
 
 ## Change paramaters example
 
@@ -125,11 +125,6 @@ classifier.score(X_test, y_test)
 
 
 
-## Add visualization or animation of the paramater searching (Hannah)
-
-## At the end, add some questions about ethics of machine learning (Hannah)
 
 
-```python
 
-```
