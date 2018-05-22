@@ -30,11 +30,10 @@ print (pos_all[:5])
 ## What's with those part of speech labels?  They aren't helpful at all!
 The Penn Tagset, which NLTK uses for it's part of speech tagger, is not particularly intuitive.  Fortunately, they provide code that allows you to check what different tags stand for.
 
-
 ```python
+# troubleshooting: https://github.com/nltk/nltk/issues/919
 nltk.help.upenn_tagset("NN")
 nltk.help.upenn_tagset("JJ")
-nltk.help.upenn_tagset("RB")
 ```
 
     NN: noun, common, singular or mass
@@ -45,14 +44,11 @@ nltk.help.upenn_tagset("RB")
         third ill-mannered pre-war regrettable oiled calamitous first separable
         ectoplasmic battery-powered participatory fourth still-to-be-named
         multilingual multi-disciplinary ...
-    RB: adverb
-        occasionally unabatingly maddeningly adventurously professedly
-        stirringly prominently technologically magisterially predominately
-        swiftly fiscally pitilessly ...
     
 
+
 ## Write a function that calculates our features for us 
-### (In this case, numbers of nouns, adjectives, and adverbs that appear in the sentence)
+### (In this case, numbers of nouns and adjectives that appear in the sentence)
 
 Now we know the tags for the different parts of speech we want to count in each sentence.  Let's now write a function that will count the parts of speech to us, when given a part of speech tagged sentence (such as we have already in our DataFrame) and the part of speech we want to count (for example, "NN" to count the number of nouns in the sentence).
 
@@ -299,24 +295,76 @@ df.groupby('label').sum()
 
 
 ## Let's visualize this data!
-What do you notice about the data when we look visualize it?  Do you think our features will be good at predicting news and romance sentences?  Which features do you think will be the most useful?
+What do you notice about the data?  Do you think our features will be good at predicting news and romance sentences?  Which features do you think will be the most useful?
+
+We can rotate the table using `.T` (transpose), which also changes the grouping of the data being plotted. 
 
 
 ```python
 fig, (ax1,ax2) = plt.subplots(ncols=2,  figsize=(10,5))
-_ = df.groupby('label').sum().plot.bar(ax=ax1)
-_ = df.groupby('label').sum().T.plot.bar(ax=ax2, color=['gray','hotpink'])
+_ = df.groupby('label').sum().plot.bar(ax=ax1, rot=0, color=['blue', 'red'])
+_ = df.groupby('label').sum().T.plot.bar(ax=ax2, color=['tab:blue','tab:orange'], rot=0)
+
 
 ```
 
 
-![png](output_46_0.png)
+![png](output_48_0.png)
 
 
-## Save the dataframe to your computer as a csv file (comma separated value)
+# Are there patterns in the individual observations?
+We can make a scatter plot of our data colored by label to see if the patterns observed in the aggregate are visible in the individual observations. Since 3D scatter plots are really hard to visualize cleanly, we will generate a matrix of scatter plots to visualize whether the data seperates on the feature vectors. We will use the seaborn visualization library because it plots categorical data well. 
+
+
+```python
+# seperate our data into the two classes
+news = df[df['label']=='news']
+romance = df[df['label']=='romance']
+
+fig, ax = plt.subplots()
+_ = ax.scatter(news['NN'], news['JJ'], label="news", alpha=.5)
+_ = ax.scatter(romance['NN'], romance['JJ'], label="romance", alpha=.5)
+_ = ax.legend(fontsize=14)
+_ = ax.set_xlabel("nouns", fontsize=14)
+_ = ax.set_ylabel("adjectives", fontsize=14)
+```
+
+
+![png](output_50_0.png)
+
+# Visualize Side By Side
+
+
+```python
+fig, (ax1, ax2) = plt.subplots(ncols=2, figsize=(10,5))
+
+_ = df.groupby('label').sum().T.plot.bar(ax=ax1, color=['tab:blue','tab:orange'], rot=0, 
+                                         fontsize=14)
+ax1.set_ylabel("Total Count of POS")
+
+_ = ax2.scatter(news['NN'], news['JJ'], label="news", alpha=.5)
+_ = ax2.scatter(romance['NN'], romance['JJ'], label="romance", alpha=.5)
+_ = ax2.legend(fontsize=14)
+_ = ax2.set_xlabel("nouns", fontsize=14)
+_ = ax2.set_ylabel("adjectives", fontsize=14)
+```
+
+
+![png](output_52_0.png)
+
+## Practice 3:  Save the dataframe to your computer as a csv file (comma separated value)
+
+- Hint:
+~~~
+.to_csv()
+~~~
 
 
 
 ```python
-df.to_csv("FilePath")
+df.to_csv("df_news_romance.csv", index=False)
+```
+
+```python
+
 ```
