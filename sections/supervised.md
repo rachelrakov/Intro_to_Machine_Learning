@@ -12,12 +12,34 @@ It's important to remember that we cannot use the same data we used to build the
 - We will use the train set data to train our classifier
 - We will use the test set data to test our classifier
 
+First, we need to load in the Python libraries that we will be using for our analysis. 
+
+
+```python
+import nltk
+from nltk.corpus import brown
+from nltk import pos_tag_sents
+import pandas as pd
+import matplotlib.pyplot as plt
+%matplotlib inline
+import sklearn
+```
+
+## Read data in from a spreadsheet
+Let's take the data we just saved out and load it back into a dataframe so that we can do some analysis with it!
+
+
+```python
+df = pd.read_csv("df_news_romance.csv")
+```
+
+
 ## Preparing data for machine learning
 We're almost ready to do some machine learning!  First, we need to split our data into *feature vectors* and *labels*.  We need them separated to train the classifier.  Remember, the features we are using to train our classifier are numbers of nouns, adjectives, and adverbs are in each sentence.  (We are not using the sentences themselves as features!)
 
 
 ```python
-fv = df[["NN", "JJ", "RB"]]
+fv = df[["NN", "JJ"]]
 fv.head()
 ```
 
@@ -44,7 +66,6 @@ fv.head()
       <th></th>
       <th>NN</th>
       <th>JJ</th>
-      <th>RB</th>
     </tr>
   </thead>
   <tbody>
@@ -52,31 +73,26 @@ fv.head()
       <th>0</th>
       <td>11</td>
       <td>2</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>13</td>
       <td>2</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
       <td>16</td>
       <td>2</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>3</th>
       <td>9</td>
       <td>3</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
       <td>5</td>
       <td>3</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
