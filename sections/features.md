@@ -67,13 +67,13 @@ def countPOS(pos_tag_sent, POS):
     return all_pos_counts
 ```
 
-We will now call this function three different times, one for each of the parts of speech we are counting.  As we finish counting them, we put the results into the DataFrame, saving us the trouble of having to do so later.
+We will now call this function twice, one for each of the parts of speech we are counting.  As we finish counting them, we put the results into the DataFrame, saving us the trouble of having to do so later.
 
 
 ```python
 df['NN'] = countPOS(pos_all, 'NN')
 df['JJ'] = countPOS(pos_all, "JJ")
-df['RB'] = countPOS(pos_all, "RB")
+
 ```
 
 
@@ -85,17 +85,17 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -106,7 +106,6 @@ df.head()
       <th>sentence</th>
       <th>NN</th>
       <th>JJ</th>
-      <th>RB</th>
     </tr>
   </thead>
   <tbody>
@@ -116,7 +115,6 @@ df.head()
       <td>[The, Fulton, County, Grand, Jury, said, Frida...</td>
       <td>11</td>
       <td>2</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
@@ -124,7 +122,6 @@ df.head()
       <td>[The, jury, further, said, in, term-end, prese...</td>
       <td>13</td>
       <td>2</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>2</th>
@@ -132,7 +129,6 @@ df.head()
       <td>[The, September-October, term, jury, had, been...</td>
       <td>16</td>
       <td>2</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -140,7 +136,6 @@ df.head()
       <td>[``, Only, a, relative, handful, of, such, rep...</td>
       <td>9</td>
       <td>3</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>4</th>
@@ -148,11 +143,11 @@ df.head()
       <td>[The, jury, said, it, did, find, that, many, o...</td>
       <td>5</td>
       <td>3</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
 </div>
+
 
 
 
@@ -163,19 +158,18 @@ df.tail()
 
 
 
-
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -186,7 +180,6 @@ df.tail()
       <th>sentence</th>
       <th>NN</th>
       <th>JJ</th>
-      <th>RB</th>
     </tr>
   </thead>
   <tbody>
@@ -196,7 +189,6 @@ df.tail()
       <td>[Nobody, else, showed, pleasure, .]</td>
       <td>2</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>4427</th>
@@ -204,14 +196,12 @@ df.tail()
       <td>[Spike-haired, ,, burly, ,, red-faced, ,, deck...</td>
       <td>9</td>
       <td>3</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>4428</th>
       <td>romance</td>
       <td>[``, Hello, ,, boss, '', ,, he, said, ,, and, ...</td>
       <td>2</td>
-      <td>0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -220,7 +210,6 @@ df.tail()
       <td>[``, I, suppose, I, can, never, expect, to, ca...</td>
       <td>3</td>
       <td>0</td>
-      <td>1</td>
     </tr>
     <tr>
       <th>4430</th>
@@ -228,7 +217,6 @@ df.tail()
       <td>[``, I'm, afraid, not, '', .]</td>
       <td>1</td>
       <td>0</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -244,20 +232,18 @@ df.groupby('label').sum()
 ```
 
 
-
-
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -266,11 +252,9 @@ df.groupby('label').sum()
       <th></th>
       <th>NN</th>
       <th>JJ</th>
-      <th>RB</th>
     </tr>
     <tr>
       <th>label</th>
-      <th></th>
       <th></th>
       <th></th>
     </tr>
@@ -280,17 +264,18 @@ df.groupby('label').sum()
       <th>news</th>
       <td>31593</td>
       <td>6678</td>
-      <td>2935</td>
     </tr>
     <tr>
       <th>romance</th>
       <td>13821</td>
       <td>4022</td>
-      <td>3570</td>
     </tr>
   </tbody>
 </table>
 </div>
+
+
+
 
 
 
