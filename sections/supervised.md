@@ -4,7 +4,8 @@ Supervised machine learning takes places in two steps - the *training* phase, an
 
 In the testing phase, we use the classifier we trained in the previous step, and give it previously unseen feature vectors representing unseen data to the algorithm, and have the algorithm predict the label.  We can then compare the "true" label to the predicted label, and see if our classifier provides us with a good and generlizable way of accomplishing the task (in our case, the task of automatically distinguishing news sentences from romance sentences).
 
-![image depicting two steps of classification, step one (training) shows features and labels going into a classifier trainer which outputs a classifier, step two (testing) shows features going into a classifier which outputs a label]
+![image depicting two steps of classification, step one (training) shows features and labels going into a classifier trainer which outputs a classifier, step two (testing) shows features going into a classifier which outputs a label](../images/mlsteps.png)
+
 Source: Andrew Rosenberg
 
 
@@ -149,7 +150,8 @@ print(X_test.shape)
 ## What classifier do I use?
 Chosing a classifier can be a challenging task.  However, this flowchart can give you an idea of where to start!
 
-![scikit-learn's algorithm cheat sheet, which depicts, maplike, a road map of choosing an algorithm for classification](images/algorithms_cheatsheet.png)
+![scikit-learn's algorithm cheat sheet, which depicts, maplike, a road map of choosing an algorithm for classification](../images/algorithms_cheatsheet.png)
+
 Source: Andreas Mueller
 
 
@@ -159,6 +161,8 @@ According to this, we are going to use LinearSVC, which is a linear model for cl
 ## An animated example of classification 
 The following animated GIF shows an example of linear classification.
 
-![animated gif using red, blue, and grey dots to show how decision boundaries change based on distance of grey dot to clusters of red and blue dots](//images/croppedml.gif)
+![animated gif using red, blue, and grey dots to show how decision boundaries change based on distance of grey dot to clusters of red and blue dots](../images/croppedml.gif)
+
+
 
 Source: Andrew Rosenberg

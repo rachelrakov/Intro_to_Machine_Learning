@@ -16,7 +16,7 @@ Our fruit test shows us everything we need to do a classification machine learni
 
 ## What if we had a new, unknown fruit?
 
-![Table of fruit (apple, orange, lemon) features showing height, width, color, mass, and roundness, with a new row containing features but an unknown label](//images/fruit2.png)
+![Table of fruit (apple, orange, lemon) features showing height, width, color, mass, and roundness, with a new row containing features but an unknown label](../images/fruit2.png)
 Source: Andrew Rosenberg
 
 Our fruit test is an example of a *classification* task.  Classification allows you to predict a *categorical* value.  This is a type of *supervised* machine learning, meaning we know the labels ahead of time and can give them to the machine learning algorithm so that it can be trained to knows what the categories of our data are.  This way, when it comes time to give the previously algorithm previously unseen data, it knows which categories it's looking for.
