@@ -8,7 +8,7 @@ How would you describe apples to a computer?  How would they differ from oranges
 
 Remember, computers can only really understand numbers, true false values, and strings within a predefined set
 
-![Table of fruit frit features showing height, width, color, mass, and roundness](images/fruit3.png)
+![Table of fruit (apple, orange,lemon)  features showing height, width, color, mass, and roundness](images/fruit3.png)
 
 Source: Andrew Rosenberg
 
@@ -16,7 +16,7 @@ Our fruit test shows us everything we need to do a classification machine learni
 
 ## What if we had a new, unknown fruit?
 
-![fruit2](images/fruit2.png)
+![Table of fruit (apple, orange, lemon) features showing height, width, color, mass, and roundness, with a new row containing features but an unknown label](images/fruit2.png)
 Source: Andrew Rosenberg
 
 Our fruit test is an example of a *classification* task.  Classification allows you to predict a *categorical* value.  This is a type of *supervised* machine learning, meaning we know the labels ahead of time and can give them to the machine learning algorithm so that it can be trained to knows what the categories of our data are.  This way, when it comes time to give the previously algorithm previously unseen data, it knows which categories it's looking for.
@@ -82,7 +82,7 @@ print (romance_sent[:5])
 ## What do you notice about the format of the data above?
 Each sentence is already *tokenized* - split into a series of word and punctuation stringes, with whitespace removed. This saves us the time of having to do all of this work ourselves!
 
-# Using Data Structures to manage data
+# Using Data Structures
 To start to organize our data, let's put these sentences into a pandas *DataFrame*, an object which has a format very similar to an Excel spreadsheet.  We will first make two spread sheets (one for news, and one for romance), and then combine them into one.  We will also add the category each sentences came from, which will be our *labels* for each sentence and its associated feature representation (which we will build ourselves).
 
 

@@ -1,4 +1,4 @@
-# Supervised Classification Algorithm with sklearn!
+# Supervised Classification with sklearn
 
 One of the best things about sklearn is the simplicity of its syntax.
 

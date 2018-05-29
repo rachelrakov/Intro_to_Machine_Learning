@@ -1,4 +1,4 @@
-## Getting Our Data
+# Getting Data
 
 Let's get to coding!
 

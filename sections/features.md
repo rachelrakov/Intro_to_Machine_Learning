@@ -8,7 +8,7 @@ One idea is to use how many particular *parts of speech* the sentence contains.
 
 - Nouns: Most basically described as a person, place, or thing.  Counting nouns can help determine how many topics are being discussed in a sentence.
 - Adjectives: Descriptors of nouns (eg. "yellow", "angry", "charming").  Counting adjectives can help determine how often descriptive words are being added to nouns, which can demonstrate writing style.
-- Adverbs: Descriptors of verbs (eg. "quickly", "hungrily", "annoyingly").  Counting adverbs can help determine how often the manner of the verb is modified, which can also demonstrate writing style.
+
 
 
 We will now compute all of the parts of speech on each sentence (row) in our dataframe.
@@ -296,8 +296,8 @@ _ = df.groupby('label').sum().T.plot.bar(ax=ax2, color=['tab:blue','tab:orange']
 
 ![png](output_48_0.png)
 
-
-# Are there patterns in the individual observations?
+# Visualizing Data
+## Are there patterns in the individual observations?
 We can make a scatter plot of our data colored by label to see if the patterns observed in the aggregate are visible in the individual observations. Since 3D scatter plots are really hard to visualize cleanly, we will generate a matrix of scatter plots to visualize whether the data seperates on the feature vectors. We will use the seaborn visualization library because it plots categorical data well. 
 
 
