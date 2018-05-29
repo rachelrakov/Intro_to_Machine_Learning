@@ -8,7 +8,7 @@ How would you describe apples to a computer?  How would they differ from oranges
 
 Remember, computers can only really understand numbers, true false values, and strings within a predefined set
 
-![Table of fruit (apple, orange,lemon) features showing height, width, color, mass, and roundness](//images/fruit3.png)
+![Table of fruit (apple, orange,lemon) features showing height, width, color, mass, and roundness](../images/fruit3.png)
 
 Source: Andrew Rosenberg
 
