@@ -149,7 +149,7 @@ print(X_test.shape)
 ## What classifier do I use?
 Chosing a classifier can be a challenging task.  However, this flowchart can give you an idea of where to start!
 
-![scikit-learn's algorithm cheat sheet](images/algorithms_cheatsheet.png)
+![scikit-learn's algorithm cheat sheet, which depicts, maplike, a road map of choosing an algorithm for classification](images/algorithms_cheatsheet.png)
 Source: Andreas Mueller
 
 
