@@ -1,3 +1,5 @@
+[<<< Previous](../README.md) | [Next >>>](installation.md)
+
 # Introduction
 
 In this workshop, we are going to learn how to go through the process of doing *machine learning* on a set of data.   To do so, we will download a *corpus* of text data to work with, extract *features* from this data, and do *supervised* machine learning to our data, using a mathmatical algorithm to train a*classifier* which will then classify previously unseen data into a set of predefined categories.
@@ -19,3 +21,4 @@ In this workshop, we are going to learn how to go through the process of doing *
 - *algorithm*: A process or set of rules to be followed in calculations (or other problem-solving operations), particularly by a computer
 - *classification*: An machine learning task used to predict a class label, which is a choice from a predefined list of possibilities
 
+[<<< Previous](../README.md) | [Next >>>](installation.md)

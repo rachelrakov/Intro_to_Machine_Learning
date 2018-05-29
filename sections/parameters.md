@@ -1,3 +1,5 @@
+[<<< Previous](parameters.md) | [Next >>>](resources.md)
+
 ## Changing Paramaters
 
 Every classification algorithm has paramaters, which we can see above where we created an instance of a classifier.
@@ -57,3 +59,5 @@ classifier.score(X_test, y_test)
 ```python
 
 ```
+
+[<<< Previous](parameters.md) | [Next >>>](resources.md)

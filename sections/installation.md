@@ -1,6 +1,8 @@
+[<<< Previous](introduction.md) | [Next >>>](classification.md)
+
 # Installation and Setup
 
-Note that you can also download the [Jupyter Notebook](intro_to_ml_with_python.ipynb) for this lesson to follow along
+Note that you can also download the [Jupyter Notebook](classification.mdintroduction.mdclassification.mdintroduction.mdintro_to_ml_with_python.ipynb) for this lesson to follow along
 
 ## Python 3
 
@@ -41,3 +43,10 @@ import matplotlib.pyplot as plt
 import sklearn
 
 ```
+
+
+Note that you can also download the [Jupyter Notebook](classification.mdintroduction.mdintro_to_ml_with_python.ipynb) for this lesson to follow along
+
+Note that you can also download the [Jupyter Notebook](classification.mdintroduction.mdclassification.mdintroduction.mdintro_to_ml_with_python.ipynb) for this lesson to follow along
+
+[<<< Previous](introduction.md) | [Next >>>](classification.md)

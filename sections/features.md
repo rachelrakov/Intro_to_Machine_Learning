@@ -1,3 +1,5 @@
+[<<< Previous](data.md) | [Next >>>](supervised.md)
+
 # Extracting Features
 ## What should we use as features for our data set?  What did we use as features for our fruit example before?
 ![table of fruit with features height, width, color, mass, round - one row in table set of features with unknown label ](images/fruit3.png)
@@ -353,3 +355,5 @@ df.to_csv("df_news_romance.csv", index=False)
 ```python
 
 ```
+
+[<<< Previous](data.md) | [Next >>>](supervised.md)
