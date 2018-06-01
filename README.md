@@ -8,15 +8,16 @@ In this workshop, you will learn fundamental machine learning concepts, includin
 
 -----
 
-[Introduction](sections/introduction.md)  
-[Installation](sections/installation.md)  
-[What Is Classification?](sections/classification.md)  
-[Getting Our Data](sections/data.md)  
-[Features](sections/features.md)  
-[Supervised Machine Learning](sections/supervised.md)  
-[Supervised Classification Algorithm with sklearn!](sections/supervised_classification.md)  
-[Changing Parameters](sections/parameters.md)  
-[Resources](sections/resources.md)  
+* [Introduction](sections/introduction.md)  
+* [Installation](sections/installation.md)  
+* [What Is Classification?](sections/classification.md)  
+* [Getting Our Data](sections/data.md)
+* [Features](sections/features.md)
+* [Visualization](sections/visualize.md)
+* [Supervised Machine Learning](sections/supervised.md)  
+* [Supervised Classification Algorithm with
+sklearn!](sections/supervised_classification.md)  
+* [Resources](sections/resources.md)  
 
 -----
 

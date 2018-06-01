@@ -531,10 +531,11 @@ We first create a `figure` and `axes` on which to draw our charts using `plt.sub
 ```python
 fig, ax = plt.subplots()
 _ = df['label'].value_counts().plot.bar(ax=ax, rot=0)
+fig.savefig("images/categories_counts.png", bbox_inches = 'tight', pad_inches = 0)
 ```
 
 
-![png](output_30_0.png)
+![bar graph showing number of news articles vs number of romance articles. The heights are about equal](/images/categories_counts.png)
 
 
 We have slightly more news data than romance data, which we should keep in mind as we go ahead with classification.

@@ -1,4 +1,4 @@
-[<<< Previous](parameters.md) | [Back to beginning >>>](../README.md)
+[<<< Previous](??.md) | [Back to beginning >>>](../README.md)
 
 # Resources
 
@@ -6,4 +6,4 @@
 
 "LING 83800: Methods in Computational Linguistics II", Andrew Rosenberg.  http://eniac.cs.qc.cuny.edu/andrew/methods2/, 2014.
 
-[<<< Previous](parameters.md) | [Back to beginning >>>](../README.md)
+[<<< Previous](??.md) | [Back to beginning >>>](../README.md)

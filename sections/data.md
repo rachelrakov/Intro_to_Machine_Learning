@@ -156,23 +156,4 @@ df['label'].value_counts()
     romance    4431
     Name: label, dtype: int64
 
-
-
-### What if we want to visualize that information?
-
-
-```python
-fig, ax = plt.subplots()
-_ = df['label'].value_counts().plot.bar(ax=ax)
-
-```
-
-
-![png](output_28_0.png)
-
-
-We have slightly more news data than romance data, which we should keep in mind as we go ahead with classification.
-
-
-
 [<<< Previous](classification.md) | [Next >>>](features.md)

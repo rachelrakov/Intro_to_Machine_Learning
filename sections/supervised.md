@@ -1,4 +1,4 @@
-[<<< Previous](features.md) | [Next >>>](supervised_classification.md)
+[<<< Previous](visualize.md) | [Next >>>](supervised_classification.md)
 
 # Supervised Machine Learning
 
@@ -170,4 +170,4 @@ The following animated GIF shows an example of linear classification.
 Source: Andrew Rosenberg
 
 
-[<<< Previous](features.md) | [Next >>>](supervised_classification.md)
+[<<< Previous](visualize.md) | [Next >>>](supervised_classification.md)
