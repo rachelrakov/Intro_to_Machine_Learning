@@ -1,4 +1,7 @@
-# Supervised Classification with sklearn
+[<<< Previous](supervised.md) | [Next >>>](parameters.md)
+
+# Supervised Classification Algorithm with sklearn!
+
 
 One of the best things about sklearn is the simplicity of its syntax.
 
@@ -76,3 +79,6 @@ confusion_matrix
 
 ## Visualization of the decision boundry
 
+
+
+[<<< Previous](supervised.md) | [Next >>>](parameters.md)

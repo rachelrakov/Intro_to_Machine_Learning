@@ -1,3 +1,5 @@
+[<<< Previous](installation.md) | [Next >>>](data.md)
+
 # What Is Classification? 
 
 Let's show an example of classification using fruit!
@@ -536,3 +538,6 @@ _ = df['label'].value_counts().plot.bar(ax=ax, rot=0)
 
 
 We have slightly more news data than romance data, which we should keep in mind as we go ahead with classification.
+
+
+[<<< Previous](installation.md) | [Next >>>](data.md)

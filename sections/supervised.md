@@ -1,3 +1,5 @@
+[<<< Previous](features.md) | [Next >>>](supervised_classification.md)
+
 # Supervised Machine Learning
 
 Supervised machine learning takes places in two steps - the *training* phase, and the *testing* phase.  In the training phase, you use a portion of your data to *train* your algorithm (which, in our case, is a classification algorithm).  You provide both your feature vector and your labels to the algorithm, and the algorithm searches for patterns in your data that can help associate it with a particular label.
@@ -166,3 +168,6 @@ The following animated GIF shows an example of linear classification.
 
 
 Source: Andrew Rosenberg
+
+
+[<<< Previous](features.md) | [Next >>>](supervised_classification.md)

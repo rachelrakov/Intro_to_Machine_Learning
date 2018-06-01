@@ -1,6 +1,8 @@
-# Changing Paramaters
+[<<< Previous](parameters.md) | [Next >>>](resources.md)
 
-Every classification algorithm has paramaters, which we can see above where we created an instance of a classifier.
+## Changing Paramaters
+
+Every classification algorithm has parameters, which we can see above where we created an instance of a classifier.
 
 ~~~
 LinearSVC(C=1.0, class_weight=None, dual=True, fit_intercept=True,
@@ -54,3 +56,5 @@ classifier.score(X_test, y_test)
 ```python
 
 ```
+
+[<<< Previous](parameters.md) | [Next >>>](resources.md)

@@ -1,4 +1,6 @@
-# Getting Data
+[<<< Previous](classification.md) | [Next >>>](features.md)
+
+## Getting Our Data
 
 Let's get to coding!
 
@@ -171,3 +173,6 @@ _ = df['label'].value_counts().plot.bar(ax=ax)
 
 We have slightly more news data than romance data, which we should keep in mind as we go ahead with classification.
 
+
+
+[<<< Previous](classification.md) | [Next >>>](features.md)
