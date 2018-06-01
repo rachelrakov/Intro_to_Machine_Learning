@@ -24,11 +24,11 @@ Let's get started by importing some packages we will need for this workshop.
 
 - The Brown Corpus: A text corpus of American English, split into fifteen different categories
 - Part of speech taggers (POS): prebuilt functions that are designed to determine the part of speech of every word in the sentence you give them
-- Pandas as pd: importing the Pandas toolkit and renaming it pd, so we don't have to type too much
-- matplotlib.pyplot as plt: importing plotting tools from matplotlib and renaming them plt
-    - ~~~
+- `pandas as pd`: importing the Pandas toolkit and renaming it pd, so we don't have to type too much
+- `matplotlib.pyplot as plt`: importing plotting tools from matplotlib and renaming them plt
+    ```python
     %matplotlib inline
-    ~~~
+    ```
     We use the above code to ensure our images display clearly in the Jupyter notebook.
 
 - sklearn: the scikit-learn machine learning toolkit
@@ -45,8 +45,6 @@ import sklearn
 ```
 
 
-Note that you can also download the [Jupyter Notebook](classification.mdintroduction.mdintro_to_ml_with_python.ipynb) for this lesson to follow along
-
-Note that you can also download the [Jupyter Notebook](classification.mdintroduction.mdclassification.mdintroduction.mdintro_to_ml_with_python.ipynb) for this lesson to follow along
+Note that you can also download the [Jupyter Notebook](classification.mdintroduction.mdintro_to_ml_with_python.ipynb) for this lesson to follow along.
 
 [<<< Previous](introduction.md) | [Next >>>](classification.md)

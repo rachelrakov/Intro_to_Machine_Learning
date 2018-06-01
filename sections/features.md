@@ -4,7 +4,7 @@
 ### What should we use as features for our data set?  What did we use as features for our fruit example before?
 ![table of fruit with features height, width, color, mass, round - one row in table set of features with unknown label ](../images/fruit3.png)
 
-### Now that we are using sentences, how can we best repersent each sentence as a series of values?
+### Now that we are using sentences, how can we best represent each sentence as a series of values?
 
 One idea is to use how many particular *parts of speech* the sentence contains.
 
@@ -87,19 +87,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -161,19 +148,7 @@ df.tail()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -235,19 +210,6 @@ df.groupby('label').sum()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">

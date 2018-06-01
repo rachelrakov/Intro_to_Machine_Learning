@@ -5,7 +5,7 @@ What do you notice about the data?  Do you think our features will be good at pr
 ![Diagram of the components of the matplotlib generated visualization.](../images/mpl_anatomy.png)
 <sup>1</sup>https://matplotlib.org/gallery/showcase/anatomy.html#sphx-glr-gallery-showcase-anatomy-py
 
-### How do we visualize the POS types table?
+### How do we visualize the table of parts of speech?
 
 We can directly plot any dataframe in pandas using the `.plot` method, and can do `.plot.<type>` to denote the type of chart we want to plot. This situation calls for a bar chart because there are two classes of discrete sums of counts. To explore a different grouping, the table can be rotated using `.T` (transpose). 
 

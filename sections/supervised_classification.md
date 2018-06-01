@@ -72,9 +72,9 @@ confusion_matrix
 |:--: | :--:| :--:|
 |predicted news | 747 | 409 |
 |predicted romance|253 | 855|
+
 In `LinearSVC` the `classifier.predict` decides which class a data point is in based on which side of the decision boundary, which is the gray line in the figure, the point falls on. Points in the orange area to the left of the gray line are classified as romance, while points in the blue area to the right of the gray line. Orange points in the blue area are romance texts that are misclassified as news texts, while blue points in the orange area are news texts that are misclassified as romance texts. 
 ![Scatter plot showing the decision boundary used to determine which class the point is in.](../images/testing_boundary.png)
-
 
 
 
