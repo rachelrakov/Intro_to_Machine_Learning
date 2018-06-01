@@ -102,11 +102,13 @@ rdf = pd.DataFrame({'sentence':romance_sent,
 df = pd.concat([ndf, rdf])
 ```
 
-Let's see what this DataFrame looks like! Let print out the first 5 rows using `.head()` and the last 5 using `.tail()`
+Let's see what this DataFrame looks like! Let print out the first 5 rows using `.head()`:
 
 ```python
 df.head()
 ```
+~~~
+~~~
 
 <div>
 <style>
