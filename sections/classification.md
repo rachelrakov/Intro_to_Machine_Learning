@@ -71,9 +71,9 @@ romance_sent = brown.sents(categories=["romance"])
 
 
 ```python
-print (news_sent[:5])
-print ()
-print (romance_sent[:5])
+print(news_sent[:5])
+print()
+print(romance_sent[:5])
 
 ```
 
@@ -108,9 +108,6 @@ Let's see what this DataFrame looks like!
 ```python
 df 
 ```
-
-
-
 
 <div>
 <style>
@@ -451,9 +448,6 @@ df
 ```python
 df.head()
 ```
-
-
-
 
 <div>
 <style>
