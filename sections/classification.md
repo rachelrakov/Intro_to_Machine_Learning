@@ -104,23 +104,22 @@ df = pd.concat([ndf, rdf])
 
 Let's see what this DataFrame looks like!
 
-
 ```python
 df 
 ```
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -441,8 +440,6 @@ df
 </table>
 <p>9054 rows × 2 columns</p>
 </div>
-
-
 
 
 ```python
