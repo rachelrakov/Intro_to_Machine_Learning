@@ -102,28 +102,13 @@ rdf = pd.DataFrame({'sentence':romance_sent,
 df = pd.concat([ndf, rdf])
 ```
 
-Let's see what this DataFrame looks like! Let print out the first 5 rows using `.head()`:
+Let's see what this DataFrame looks like! Let print out the first 5 rows using `.head()` and the last 5 using `.tail()`
 
 ```python
 df.head()
 ```
-~~~
-~~~
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
