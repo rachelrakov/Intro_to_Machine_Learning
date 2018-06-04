@@ -80,7 +80,7 @@ df['sentence'].head()
 
 
 ### Bag of Words
-We preprocess our data using sklearn's text feature extraction tools. In particular, we use the `CountVectorizer` which computes the frequency of each token in the document. We can strip out stop words using the `stop_words` keyword argument.
+We preprocess our data using sklearn's text feature extraction tools. In particular, we use the `CountVectorizer` which computes the frequency of each token in the document. We can strip out stop words (words that are so common they don't add to the data analysis, such as "the" and "a") using the `stop_words` keyword argument.
 
 
 ```python
