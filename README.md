@@ -26,8 +26,7 @@ In this workshop, you will learn the following skills:
 * [Features](sections/features.md)
 * [Visualization](sections/visualize.md)
 * [Supervised Machine Learning](sections/supervised.md)  
-* [Supervised Classification Algorithm with
-sklearn!](sections/supervised_classification.md)  
+* [Supervised Classification](sections/supervised_classification.md)  
 * [Unsupervised Machine Learning](sections/unsupervised.md)
 * [Feature Extraction Using Bag of Words](sections/bag_of_words.md)
 * [Topic Modeling with Latent Dirchlet Allocation](sections/lda.md)
