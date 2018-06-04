@@ -180,31 +180,22 @@ topic_labels
 
 
 
-We can now use a confusion matrix to see if there is overlap between the topics and the labels. In a confusion matrix, the data is the counts of true positive, false positive, false negative, and true negative labeing. As a table,it is:
+We can now use a confusion matrix to see if there is overlap between the topics and the labels. In a confusion matrix, the data is the counts of true positive, false positive, false negative, and true negative labeing. As a table, it is:
 
- |actual news | actual romance 
-:--: | :--:| :--:
-predicted news || 
-predicted romance| |
+||actual news | actual romance|
+|:--: | :--:| :--:|
+|predicted news || 
+|predicted romance| |
 
 
 ```python
 from sklearn.metrics import confusion_matrix
 confusion_matrix(df['label'], topic_labels)
 ```
-
-
-
-
-    array([[2480, 2143],
-           [2540, 1891]])
-
-
-
-|actual news | actual romance 
-:--: | :--:| :--:
-predicted news |2143|2480 
-predicted romance|1891 |2540
+||actual news | actual romance| 
+|:--: | :--:| :--:|
+|predicted news |2480|2143|
+|predicted romance|2540 |1891|
 
 ### Challenge
 
@@ -217,4 +208,5 @@ Since topic modeling works better with longer texts, what topics do you get if y
 2. Pride and Prejudice
 3. Both together?
 4. A contemporary text like The Hunger Games
+
 [<<< Previous](bag_of_words.md) 
