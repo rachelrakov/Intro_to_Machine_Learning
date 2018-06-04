@@ -1,6 +1,6 @@
 [<<< Previous](supervised.md) | [Next >>>](unsupervised.md)
 
-# Supervised Classification Algorithm with sklearn!
+# Supervised Classification
 
 
 One of the best things about sklearn is the simplicity of its syntax.
