@@ -12,7 +12,7 @@ In this workshop, you will learn the following skills:
 - How to prepare data for machine learning using *pandas*, a package for Python that helps to organize your data
 - How to use the scikit-learn package for Python to perform different types of machine learning on the data
 - How to evaluate the results of machine learning algorithms
-- How to visualize obeservations, aggregations, and algorithmic results
+- How to visualize observations, aggregations, and algorithmic results
 
 
 [Get Started >>>](sections/introduction.md)
