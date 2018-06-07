@@ -1,7 +1,7 @@
 [<<< Previous](features.md) | [Next >>>](supervised.md)
 
 ## Let's visualize this data!
-What do you notice about the data?  Do you think our features will be good at predicting news and romance sentences?  Which features do you think will be the most useful? We will be using the *matplotlib* and *pandas* libraries to visualize our data, and the latter is built on the former. As mentioned above, a *matplotlib* visualization is a `figure` onto which is attached one or more `axes`. Each `axes` has a horizontal (x) `axis` and vertical (y) `axis`, and the data is encoded using color and glyphs such as `markers` (for example circles) or `lines` or polygons (called `patches`). The figure below annotates these parts of a visualization and was created by Nicolas P. Rougier using `matplotlib`. The source code can be found in the matplotlib documentation. <sup>1</sup>
+What do you notice about the data?  Do you think our features will be good at predicting news and romance sentences?  Which features do you think will be the most useful? We will be using the *matplotlib* and *pandas* libraries to visualize our data, and the latter is built on the former. As mentioned above, a *matplotlib* visualization is a `figure` onto which is attached one or more `axes`. Each `axis` has a horizontal (x) `axis` and vertical (y) `axis`, and the data is encoded using color and glyphs such as `markers` (for example circles) or `lines` or polygons (called `patches`). The figure below annotates these parts of a visualization and was created by Nicolas P. Rougier using `matplotlib`. The source code can be found in the matplotlib documentation. <sup>1</sup>
 ![Diagram of the components of the matplotlib generated visualization.](../images/mpl_anatomy.png)
 <sup>1</sup>https://matplotlib.org/gallery/showcase/anatomy.html#sphx-glr-gallery-showcase-anatomy-py
 
@@ -63,7 +63,7 @@ fig.savefig("images/romance_scatter.png", bbox_inches = 'tight', pad_inches = 0)
 ![Same scatter plot as above, but with the order of plotting the data flipped. This graph shows that news sentences highly overlap romance sentences in noun and adjective counts.](../images/romance_scatter.png)
 
 
-### How do we visual dense highly overlapping data? 
+### How do we visualize dense, highly overlapping data? 
 
 As seen above, when the data is very dense the points can sometimes overlap. One way to visualize this overlapping data is to shift each point by a tiny amount so that the data is no longer at exactly the same coordinate. This technique is called *jittering*. In the `jitter` function below, we compute a scale factor by which to multiply random numbers between 0 and 1 so that the jitter is large enough to effect the visualization. 
 
@@ -91,7 +91,7 @@ fig.savefig("images/jitter.png", bbox_inches = 'tight', pad_inches = 0)
 
 
 ### Visualize Side By Side
-Lets put the scatter plot next to the bar chart aggrated comparisons so that we can see how our overall patterns compare to what is happening in the individual observations. 
+Lets put the scatter plot next to the bar chart aggregated comparisons so that we can see how our overall patterns compare to what is happening in the individual observations. 
 
 ```python
 fig, (ax1, ax2) = plt.subplots(ncols=2, figsize=(15,3), gridspec_kw={'width_ratios':[1,5]})
