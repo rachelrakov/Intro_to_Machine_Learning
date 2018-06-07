@@ -6,7 +6,7 @@ Note that you can also download the [Jupyter Notebook](classification.mdintroduc
 
 ## Python 3
 
-The Natural Lanugage Toolkit
+- the Natural Language Toolkit
     - We will be using both corpora and tools from this package
 - pandas 
     - We will use this for data processing
@@ -14,7 +14,7 @@ The Natural Lanugage Toolkit
 - matplotlib
     - We will use this for visualizing our data
     - Comes with Anaconda
-- sckiit-learn
+- scikit-learn
     - We will use this for machine learning
     - Comes with Anaconda 
 
