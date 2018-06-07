@@ -11,32 +11,32 @@ In this workshop, we are going to learn how to go through the process of doing *
 > -- Andreas Mueller, "Introduction to Machine Learning with Python".
 
 ## Key terms
-- *machine learning*: An application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed
+- *machine learning*: an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed
 
-- *corpus*: A large collection of data.  In our case, this will be text data (although a corpus can contain any type of data)
+- *corpus*: a large collection of data.  In our case, this will be text data (although a corpus can contain any type of data)
 
-- *dataset*: collection of related information (such as a corpus)
+- *dataset*: a collection of related information (such as a corpus)
 
-    - *variable*: attribute of the dataset (such as the type of text being analyzed)
+    - *variable*: an attribute of the dataset (such as the type of text being analyzed)
 
-    - *observation*: entry in the dataset (a single text)
+    - *observation*: an entry in the dataset (a single text)
 
-    - *measurement*: single data point (eg: one texts type)
+    - *measurement*: a single data point (eg: one text's type)
 
-- *features*: Properties that describe data attributes for machine learning - often the variables
+- *features*: properties that describe data attributes for machine learning—often the variables
 
-- *feature representation, feature vector*: A set of features
-
-
-- *supervised machine learning*:  A machine learning task of learning a function that maps an input to an output based on example input-output pairs
+- *feature representation, feature vector*: a set of features
 
 
-- *unsupervised machine learning*: A machine learning task used to draw inferences from datasets consisting of input data without labeled responses (lacks input-output pairs; only has input data)
+- *supervised machine learning*:  a machine learning task of learning a function that maps an input to an output based on example input-output pairs
 
 
-- *algorithm*: A process or set of rules to be followed in calculations (or other problem-solving operations), particularly by a computer
+- *unsupervised machine learning*: a machine learning task used to draw inferences from datasets consisting of input data without labelled responses (lacks input-output pairs; only has input data)
 
 
-- *classification*: An machine learning task used to predict a class label, which is a choice from a predefined list of possibilities
+- *algorithm*: a process or set of rules to be followed in calculations (or other problem-solving operations), particularly by a computer
+
+
+- *classification*: a machine learning task used to predict a class label, which is a choice from a predefined list of possibilities
 
 [<<< Previous](../README.md) | [Next >>>](installation.md)
