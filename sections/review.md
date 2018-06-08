@@ -1,4 +1,4 @@
-[<<< Previous](lda.md) | [Next >>>](resources.md)
+[<<< Previous](lda.md) |
 # Workshop Debrief
 
 At the end of this workshop, we have covered the following skills:
