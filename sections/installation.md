@@ -24,7 +24,7 @@ Let's get started by importing some packages we will need for this workshop.
 
 - The Brown Corpus: A text corpus of American English, split into fifteen different categories
 - Part of speech taggers (POS): prebuilt functions that are designed to determine the part of speech of every word in the sentence you give them
-- `pandas as pd`: importing the Pandas toolkit and renaming it pd, so we don't have to type too much
+- `pandas as pd`: importing the Pandas toolkit and renaming it pd, to make the command briefer for us to type each time we use it  
 - `matplotlib.pyplot as plt`: importing plotting tools from matplotlib and renaming them plt
     ```python
     %matplotlib inline
