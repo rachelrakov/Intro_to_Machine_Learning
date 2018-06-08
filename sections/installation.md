@@ -14,7 +14,7 @@ The Natural Lanugage Toolkit
 - matplotlib
     - We will use this for visualizing our data
     - Comes with Anaconda
-- sckiit-learn
+- sckit-learn
     - We will use this for machine learning
     - Comes with Anaconda 
 
