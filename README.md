@@ -19,19 +19,19 @@ In this workshop, you will learn the following skills:
 
 -----
 
-* [Introduction](sections/introduction.md)  
-* [Installation](sections/installation.md)  
-* [What Is Classification?](sections/classification.md)  
-* [Getting Our Data](sections/data.md)
-* [Features](sections/features.md)
-* [Visualization](sections/visualize.md)
-* [Supervised Machine Learning](sections/supervised.md)  
-* [Supervised Classification](sections/supervised_classification.md)  
-* [Unsupervised Machine Learning](sections/unsupervised.md)
-* [Feature Extraction Using Bag of Words](sections/bag_of_words.md)
-* [Topic Modeling with Latent Dirchlet Allocation](sections/lda.md)
-* [Appendix: Visualizations](sections/visualizations.md)
-* [Resources](sections/resources.md)  
+[Introduction](sections/introduction.md)  
+[Installation](sections/installation.md)  
+[What Is Classification?](sections/classification.md)  
+[Getting Our Data](sections/data.md)  
+[Features](sections/features.md)  
+[Visualization](sections/visualize.md)  
+[Supervised Machine Learning](sections/supervised.md)  
+[Supervised Classification](sections/supervised_classification.md)  
+[Unsupervised Machine Learning](sections/unsupervised.md)  
+[Feature Extraction Using Bag of Words](sections/bag_of_words.md)  
+[Topic Modeling with Latent Dirchlet Allocation](sections/lda.md)  
+[Appendix: Visualizations](sections/visualizations.md)  
+[Resources](sections/resources.md)  
 
 -----
 
