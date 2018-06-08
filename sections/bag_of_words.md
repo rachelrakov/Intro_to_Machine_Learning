@@ -5,7 +5,7 @@
 We're almost ready to do some machine learning!  First, we need to turn our sentences into the type of *feature vectors* the algorithm we plan to work with expects. Jumping ahead a bit, the `Sklearn` implementation of the algorithm we will use for unsupervised learning requires that the text be in *bag of words* form, which is the unique words in the text and the count of occurances of that word. 
 
 ### Read data in from a spreadsheet
-Lets take the data we just saved out and load it back into a dataframe so that we can do some analysis with it!
+Let's take the data we just saved out and load it back into a dataframe so that we can do some analysis with it!
 
 ```python
 import pandas as pd
@@ -80,7 +80,7 @@ df['sentence'].head()
 
 
 ### Bag of Words
-We preprocess our data using sklearn's text feature extraction tools. In particular, we use the `CountVectorizer` which computes the frequency of each token in the document. We can strip out stop words (words that are so common they don't add to the data analysis, such as "the" and "a") using the `stop_words` keyword argument.
+We preprocess our data using sklearn's text feature extraction tools. In particular, we use the `CountVectorizer` which computes the frequency of each token in the document. We can strip out *stop words* (words that are so common they don't add to the data analysis, such as "the" and "a") using the `stop_words` keyword argument.
 
 
 ```python
@@ -93,7 +93,7 @@ tf = tf_vectorizer.fit_transform(df['sentence'])
 `CountVectorizer` processes the text such that `tf` is a sparse matrix containing the count of words in each document. One document in the Brown corpus is the following sentence: 
 >Mrs. Robert O. Spurdle is chairman of the committee , which includes Mrs. James A. Moody , Mrs. Frank C. Wilkinson , Mrs. Ethel Coles , Mrs. Harold G. Lacy , Mrs. Albert W. Terry , Mrs. Henry M. Chance , 2d , Mrs. Robert O. Spurdle , Jr. , Mrs. Harcourt N. Trimble , Jr. , Mrs. John A. Moller , Mrs. Robert Zeising , Mrs. William G. Kilhour , Mrs. Hughes Cauffman , Mrs. John L. Baringer and Mrs. Clyde Newman .
 
-Via the `CountVectorizer` the stop words, punctuation, and very low frequency words have been removed. This yeilds the words and their counts listed below and visualized in the word cloud. 
+Through the `CountVectorizer` command, the stop words, punctuation, and very low frequency words have been removed. This yeilds the words and their counts, which are listed and also visualized in a word cloud below. 
 
 ```python
 {'2d': 1, 'albert': 1, 'baringer': 1, 'cauffman': 1, 'chairman': 1, 'chance': 1, 'clyde': 1, 'coles': 1, 
