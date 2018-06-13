@@ -1,4 +1,4 @@
-[<<< Previous](bag_of_words.md) | 
+[<<< Previous](bag_of_words.md) | [Next >>>](review.md)
 
 
 ## What is topic modeling using LDA?
@@ -208,5 +208,4 @@ Since topic modeling works better with longer texts, what topics do you get if y
 2. Pride and Prejudice
 3. Both together?
 4. A contemporary text like The Hunger Games
-
 [<<< Previous](bag_of_words.md) 
