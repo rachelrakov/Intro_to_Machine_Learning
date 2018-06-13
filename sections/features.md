@@ -69,7 +69,7 @@ def countPOS(pos_tag_sent, POS):
     return all_pos_counts
 ```
 
-We will now apply this function twice, one for each of the parts of speech we are counting.  As we finish counting them, we put the results into the DataFrame, saving us the trouble of having to do so later.
+We will now call this function twice, one for each of the parts of speech we are counting.  As we finish counting them, we put the results into the DataFrame, saving us the trouble of having to do so later.
 
 
 ```python
