@@ -44,8 +44,8 @@ y_predict = classifier.predict(X_test)
 
 ## Step 5: score!
 Evaluate the skill of the model by computing the 
-* score: how many predicted labels are the same as the actual labels 
-* confusion matrix: true positive, false positive, false negative, and true negative counts
+* *score*: how many predicted labels are the same as the actual labels 
+* *confusion matrix*: true positive, false positive, false negative, and true negative counts
 
 ```python
 classifier.score(X_test, y_test)
@@ -55,7 +55,7 @@ classifier.score(X_test, y_test)
 ```
 
 
-Right now, our classifier can correctly predict previously unseen news and data about 71% of the time.  We can get more information about how we doing by creating a confusion matrix. This confusion matrix shows how many times we are predicting categories correctly.
+Right now, our classifier can correctly predict previously unseen news and data about 71% of the time.  We can get more information about how we are doing by creating a *confusion matrix*. This confusion matrix shows how many times we are predicting categories correctly.
 
 
 ```python

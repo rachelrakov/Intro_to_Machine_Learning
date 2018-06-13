@@ -6,7 +6,7 @@
 
 ### Now that we are using sentences, how can we best represent each sentence as a series of values?
 
-One idea is to use how many particular *parts of speech* the sentence contains.
+One idea is to count how many particular *parts of speech* the sentence contains.
 
 - Nouns: Most basically described as a person, place, or thing.  Counting nouns can help determine how many topics are being discussed in a sentence.
 - Adjectives: Descriptors of nouns (eg. "yellow", "angry", "charming").  Counting adjectives can help determine how often descriptive words are being added to nouns, which can demonstrate writing style.
@@ -52,7 +52,7 @@ nltk.help.upenn_tagset("JJ")
 ## Write a function that calculates our features for us 
 ### (In this case, numbers of nouns and adjectives that appear in the sentence)
 
-Now we know the tags for the different parts of speech we want to count in each sentence.  Let's now write a function that will count the parts of speech to us, when given a part of speech tagged sentence (such as we have already in our DataFrame) and the part of speech we want to count (for example, "NN" to count the number of nouns in the sentence).
+Now we know the tags for the different parts of speech we want to count in each sentence.  Let's write a function that will count the parts of speech to us, when given a part of speech tagged sentence (such as what we have already in our DataFrame) and the part of speech we want to count (for example, "NN" to count the number of nouns in the sentence).
 
 
 ```python
