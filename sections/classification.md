@@ -22,7 +22,7 @@ Our fruit test shows us everything we need to do a classification machine learni
 
 Source: Andrew Rosenberg
 
-Our fruit test is an example of a *classification* task.  Classification allows you to predict a *categorical* value.  This is a type of *supervised* machine learning, meaning we know the labels ahead of time and can give them to the machine learning algorithm so that it can be trained to knows what the categories of our data are.  This way, when it comes time to give the previously algorithm previously unseen data, it knows which categories it's looking for.
+Our fruit test is an example of a *classification* task.  Classification allows you to predict a *categorical* value.  This is a type of *supervised* machine learning, meaning we know the labels ahead of time and can give them to the machine learning algorithm so that it can be trained to knows what the categories of our data are.  This way, when it comes time to give the algorithm previously unseen data, it knows which categories it's looking for.
 
 
 ## Getting Our Data
@@ -83,10 +83,10 @@ print(romance_sent[:5])
     
 
 ## What do you notice about the format of the data above?
-Each sentence is already *tokenized* - split into a series of word and punctuation stringes, with whitespace removed. This saves us the time of having to do all of this work ourselves!
+Each sentence is already *tokenized*—split into a series of word and punctuation stringes, with whitespace removed. This saves us the time of having to do all of this work ourselves!
 
 # Using Data Structures
-To start to organize our data, let's put these sentences into a pandas *DataFrame*, an object which has a format very similar to an Excel spreadsheet.  We will first make two spread sheets (one for news, and one for romance), and then combine them into one.  We will also add the category each sentences came from, which will be our *labels* for each sentence and its associated feature representation (which we will build ourselves).
+To start to organize our data, let's put these sentences into a pandas *DataFrame*, an object which has a format very similar to an Excel spreadsheet.  We will first make two spread sheets (one for news, and one for romance), and then combine them into one.  We will also add the category each sentence came from (news or romance), which will be our *labels* for each sentence and its associated feature representation (which we will build ourselves).
 
 
 ```python
@@ -166,7 +166,7 @@ df['label'].value_counts()
 
 
 ## What if we want to visualize that information?
-We first create a `figure` and `axes` on which to draw our charts using `plt.subplots()`. Each chart is one axes, and a figure can contain multiple charts. Our data is encapsulated in `df['label'].value_counts()`, which is itself a dataframe. We then tell the Pandas to visualize the dataframe as a bar chart using `.plot.bar(ax=ax, rot=0)`. The `ax` keyword tells Pandas which chart in the figure to plot, and the `rot` keyword controls the rotation of the x axis labels.
+We first create a `figure` and `axes` on which to draw our charts using `plt.subplots()`. Each chart is one axes, and a figure can contain multiple axes. Our data is encapsulated in `df['label'].value_counts()`, which is itself a *DataFrame*. We then tell the Pandas to visualize the *DataFrame* as a bar chart using `.plot.bar(ax=ax, rot=0)`. The `ax` keyword tells Pandas which chart in the figure to plot, and the `rot` keyword controls the rotation of the x axis labels.
 
 ```python
 fig, ax = plt.subplots()
