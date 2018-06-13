@@ -1,6 +1,8 @@
+[<<< Previous](visualize.md) | [Next >>>](supervised_classification.md)
+
 # Supervised Machine Learning
 
-Supervised machine learning takes places in two steps - the *training* phase, and the *testing* phase.  In the training phase, you use a portion of your data to *train* your algorithm (which, in our case, is a classification algorithm).  You provide both your feature vector and your labels to the algorithm, and the algorithm searches for patterns in your data that can help associate it with a particular label.
+Supervised machine learning takes places in two steps: the *training* phase, and the *testing* phase.  In the training phase, you use a portion of your data to *train* your algorithm (which, in our case, is a classification algorithm).  You provide both your feature vector and your labels to the algorithm, and the algorithm searches for patterns in your data that can help associate it with a particular label.
 
 In the testing phase, we use the classifier we trained in the previous step, and give it previously unseen feature vectors representing unseen data to the algorithm, and have the algorithm predict the label.  We can then compare the "true" label to the predicted label, and see if our classifier provides us with a good and generlizable way of accomplishing the task (in our case, the task of automatically distinguishing news sentences from romance sentences).
 
@@ -48,19 +50,6 @@ fv.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -119,7 +108,7 @@ We have more news sentences than romance sentences; this is not a problem, but i
 
 
 ## Partitioning data into train and test sets
-When you are partitioning your data into train and test sets, a good place to start is to use 75% of your data for training,and 25% of your data for testing.  We want as much training data as possible, while also having enough testing data to ensure that our trained classifier is generalizable across a number of examples.  This will also lead to more accurate evalutation of our trained classifier.
+When you are partitioning your data into train and test sets, a good place to start is to use 75% of your data for training, and 25% of your data for testing.  We want as much training data as possible, while also having enough testing data to ensure that our trained classifier is generalizable across a number of examples.  This will also lead to more accurate evalutation of our trained classifier.
 
 Fortunately, sklearn has a function that will do exactly this!
 
@@ -166,3 +155,6 @@ The following animated GIF shows an example of linear classification.
 
 
 Source: Andrew Rosenberg
+
+
+[<<< Previous](visualize.md) | [Next >>>](supervised_classification.md)

@@ -1,8 +1,10 @@
+[<<< Previous](data.md) | [Next >>>](visualize.md)
+
 # Extracting Features
 ### What should we use as features for our data set?  What did we use as features for our fruit example before?
 ![table of fruit with features height, width, color, mass, round - one row in table set of features with unknown label ](../images/fruit3.png)
 
-### Now that we are using sentences, how can we best repersent each sentence as a series of values?
+### Now that we are using sentences, how can we best represent each sentence as a series of values?
 
 One idea is to use how many particular *parts of speech* the sentence contains.
 
@@ -85,19 +87,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -159,19 +148,7 @@ df.tail()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -233,19 +210,6 @@ df.groupby('label').sum()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -274,82 +238,12 @@ df.groupby('label').sum()
 </table>
 </div>
 
-
-
-
-
-
-## Let's visualize this data!
-What do you notice about the data?  Do you think our features will be good at predicting news and romance sentences?  Which features do you think will be the most useful?
-
-We can rotate the table using `.T` (transpose), which also changes the grouping of the data being plotted. 
-
-
-```python
-fig, (ax1,ax2) = plt.subplots(ncols=2,  figsize=(10,5))
-_ = df.groupby('label').sum().plot.bar(ax=ax1, rot=0, color=['blue', 'red'])
-_ = df.groupby('label').sum().T.plot.bar(ax=ax2, color=['tab:blue','tab:orange'], rot=0)
-
-
-```
-
-
-![png](output_48_0.png)
-
-# Visualizing Data
-## Are there patterns in the individual observations?
-We can make a scatter plot of our data colored by label to see if the patterns observed in the aggregate are visible in the individual observations. Since 3D scatter plots are really hard to visualize cleanly, we will generate a matrix of scatter plots to visualize whether the data seperates on the feature vectors. We will use the seaborn visualization library because it plots categorical data well. 
-
-
-```python
-# seperate our data into the two classes
-news = df[df['label']=='news']
-romance = df[df['label']=='romance']
-
-fig, ax = plt.subplots()
-_ = ax.scatter(news['NN'], news['JJ'], label="news", alpha=.5)
-_ = ax.scatter(romance['NN'], romance['JJ'], label="romance", alpha=.5)
-_ = ax.legend(fontsize=14)
-_ = ax.set_xlabel("nouns", fontsize=14)
-_ = ax.set_ylabel("adjectives", fontsize=14)
-```
-
-
-![png](output_50_0.png)
-
-# Visualize Side By Side
-
-
-```python
-fig, (ax1, ax2) = plt.subplots(ncols=2, figsize=(10,5))
-
-_ = df.groupby('label').sum().T.plot.bar(ax=ax1, color=['tab:blue','tab:orange'], rot=0, 
-                                         fontsize=14)
-ax1.set_ylabel("Total Count of POS")
-
-_ = ax2.scatter(news['NN'], news['JJ'], label="news", alpha=.5)
-_ = ax2.scatter(romance['NN'], romance['JJ'], label="romance", alpha=.5)
-_ = ax2.legend(fontsize=14)
-_ = ax2.set_xlabel("nouns", fontsize=14)
-_ = ax2.set_ylabel("adjectives", fontsize=14)
-```
-
-
-![png](output_52_0.png)
-
 ## Practice 3:  Save the dataframe to your computer as a csv file (comma separated value)
 
-- Hint:
-~~~
-.to_csv()
-~~~
-
-
+Hint: `.to_csv()`
 
 ```python
 df.to_csv("df_news_romance.csv", index=False)
 ```
 
-```python
-
-```
+[<<< Previous](data.md) | [Next >>>](visualize.md)

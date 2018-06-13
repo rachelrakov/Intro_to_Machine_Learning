@@ -1,4 +1,6 @@
-# Getting Data
+[<<< Previous](classification.md) | [Next >>>](features.md)
+
+## Getting Our Data
 
 Let's get to coding!
 
@@ -56,7 +58,7 @@ print (romance_sent[:5])
     
 
 ### What do you notice about the format of the data above?
-Each sentence is already *tokenized* - split into a series of word and punctuation stringes, with whitespace removed. This saves us the time of having to do all of this work ourselves!
+Each sentence is already *tokenized*—split into a series of word and punctuation strings, with whitespace removed. This saves us the time of having to do all of this work ourselves!
 
 To start to organize our data, let's put these sentences into a pandas *DataFrame*, an object which has a format very similar to an Excel spreadsheet.  We will first make two spread sheets (one for news, and one for romance), and then combine them into one.  We will also add the category each sentences came from, which will be our *labels* for each sentence and its associated feature representation (which we will build ourselves).
 
@@ -83,23 +85,7 @@ Let's see what this DataFrame looks like!
 df.head()
 ```
 
-
-
-
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -154,20 +140,4 @@ df['label'].value_counts()
     romance    4431
     Name: label, dtype: int64
 
-
-
-### What if we want to visualize that information?
-
-
-```python
-fig, ax = plt.subplots()
-_ = df['label'].value_counts().plot.bar(ax=ax)
-
-```
-
-
-![png](output_28_0.png)
-
-
-We have slightly more news data than romance data, which we should keep in mind as we go ahead with classification.
-
+[<<< Previous](classification.md) | [Next >>>](features.md)
