@@ -166,7 +166,7 @@ df['label'].value_counts()
 
 
 ## What if we want to visualize that information?
-We first create a `figure` and `axes` on which to draw our charts using `plt.subplots()`. Each chart is one axes, and a figure can contain multiple axes. Our data is encapsulated in `df['label'].value_counts()`, which is itself a data frame. We then tell the Pandas to visualize the data frame as a bar chart using `.plot.bar(ax=ax, rot=0)`. The `ax` keyword tells Pandas which chart in the figure to plot, and the `rot` keyword controls the rotation of the x axis labels.
+We first create a `figure` and `axes` on which to draw our charts using `plt.subplots()`. Each chart is one axes, and a figure can contain multiple axes. Our data is encapsulated in `df['label'].value_counts()`, which is itself a *DataFrame*. We then tell the Pandas to visualize the *DataFrame* as a bar chart using `.plot.bar(ax=ax, rot=0)`. The `ax` keyword tells Pandas which chart in the figure to plot, and the `rot` keyword controls the rotation of the x axis labels.
 
 ```python
 fig, ax = plt.subplots()
