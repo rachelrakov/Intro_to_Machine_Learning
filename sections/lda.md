@@ -5,7 +5,7 @@
 
 ![diagram showing a collection of texts then an arrow going towards a black box named LDA. On the other side of the black box are two arrows. One is slightly tilted up and points toward three circles. Each circle is a topic and contains a sample of words in that topic. The other arrow is slightly titled down and points towards a document. In the document, words are annotated to indicate which topic they belong to (if any)](../images/lda_diagram.png)
 
-One subset of these clustering tasks are topic extraction tasks, where the aim is to find common groupings of items across collections of items. One method of doing so is *Latent Dirichlet allocation (LDA)*. Latent Dirichlet Allocation is a way to model how topics are distributed over a corpus and words are distributed over a set of topics. 
+One subset of unsupervised learning tasks are topic extraction tasks, where the aim is to find common groupings of items across collections of items. One method of doing so is *Latent Dirichlet allocation (LDA)*. Latent Dirichlet Allocation is a way to model how topics are distributed over a corpus and words are distributed over a set of topics. 
 
 In broad strokes, LDA extracts hidden (latent) topics via the following steps:<sup>1, 2</sup>
 
@@ -74,7 +74,7 @@ We now want to model the documents in our corpus in terms of the topics discover
 document_topic = lda.transform(tf)
 ```
 
- We now want to visualize how much of each document is each topic - for example that document 1 is 10% topic A and 25% topic b. We choose an area chart because each band of the chart maps to a different category (in this case a unique topic). The width of each band in relation to the others illustrates how much of the document is thought to be about that topic relative to the others.  
+Then we visualize how much of each document is each topic - for example that document 1 is 10% topic A and 25% topic b. We choose an area chart because each band of the chart maps to a different category (in this case a unique topic). The width of each band in relation to the others illustrates how much of the document is thought to be about that topic relative to the others.  
 
 
 ```python
@@ -101,7 +101,7 @@ fig.savefig("images/doc_topic.png", bbox_inches = 'tight', pad_inches = 0)
 
 
 ### Step 5: Print topics
-`lda.components_` is an array where each row is a topic, and each column roughly contains the number of times that word was assigned to that topic, which is also the probability of that word being in that topic. To figure out which word is in which column, we use the `get_feature_names())` function from `CountVectorizer`.Tthe `argsort` function is used to return the indexes of the columns with the highest probabilities, which we then map into our collection of words. Here we print the top 5 words in each topic.
+`lda.components_` is an array where each row is a topic, and each column roughly contains the number of times that word was assigned to that topic, which is also the probability of that word being in that topic. To figure out which word is in which column, we use the `get_feature_names()` function from `CountVectorizer`. The `argsort` function is used to return the indexes of the columns with the highest probabilities, which we then map into our collection of words. Here we print the top 5 words in each topic.
 
 
 ```python

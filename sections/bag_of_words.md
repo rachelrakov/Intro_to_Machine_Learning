@@ -95,7 +95,7 @@ tf = tf_vectorizer.fit_transform(df['sentence'])
 One document in the Brown corpus is the following sentence: 
 >Mrs. Robert O. Spurdle is chairman of the committee , which includes Mrs. James A. Moody , Mrs. Frank C. Wilkinson , Mrs. Ethel Coles , Mrs. Harold G. Lacy , Mrs. Albert W. Terry , Mrs. Henry M. Chance , 2d , Mrs. Robert O. Spurdle , Jr. , Mrs. Harcourt N. Trimble , Jr. , Mrs. John A. Moller , Mrs. Robert Zeising , Mrs. William G. Kilhour , Mrs. Hughes Cauffman , Mrs. John L. Baringer and Mrs. Clyde Newman .
 
-Through the `CountVectorizer` command, the stop words, punctuation, and very low frequency words have been removed. This yeilds the words and their counts, which are listed and also visualized in a word cloud below. 
+Through the `CountVectorizer` command, the stop words, punctuation, and very low frequency words have been removed. This yeilds the words and their counts, which are listed and also visualized in a word cloud below. The creation of this visualization is discussed in an [appendix](word_cloud.md).
 
 ```python
 {'2d': 1, 'albert': 1, 'baringer': 1, 'cauffman': 1, 'chairman': 1, 'chance': 1, 'clyde': 1, 'coles': 1, 

@@ -4,7 +4,7 @@
 
 Supervised machine learning takes places in two steps: the *training* phase, and the *testing* phase.  In the training phase, you use a portion of your data to *train* your algorithm (which, in our case, is a classification algorithm).  You provide both your feature vector and your labels to the algorithm, and the algorithm searches for patterns in your data that can help associate it with a particular label.
 
-In the testing phase, we use the classifier we trained in the previous step, and give it previously unseen feature vectors representing unseen data to the algorithm, and have the algorithm predict the label.  We can then compare the "true" label to the predicted label, and see if our classifier provides us with a good and generlizable way of accomplishing the task (in our case, the task of automatically distinguishing news sentences from romance sentences).
+In the testing phase, we use the classifier we trained in the previous step, and give it previously unseen feature vectors representing unseen data to the algorithm, and have the algorithm predict the label.  We can then compare the "true" label to the predicted label, and see if our classifier provides us with a good and generalizable way of accomplishing the task (in our case, the task of automatically distinguishing news sentences from romance sentences).
 
 ![image depicting two steps of classification, step one (training) shows features and labels going into a classifier trainer which outputs a classifier, step two (testing) shows features going into a classifier which outputs a label](../images/mlsteps.png)
 

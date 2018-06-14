@@ -1,5 +1,6 @@
 Appendix: Visualize the decision boundary
 ================================
+
 This appendix walks through the decision boundary visualizations found in the discussion of [supervised_classification](supervised_classification.md)
 
 First we go through the steps of feeding the data into the algorithm because we will need the attributes of the model for the visualization. 
