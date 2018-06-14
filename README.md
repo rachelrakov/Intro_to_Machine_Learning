@@ -33,13 +33,15 @@ sklearn!](sections/supervised_classification.md)
 * [Feature Extraction Using Bag of Words](sections/bag_of_words.md)
 * [Topic Modeling with Latent Dirchlet Allocation](sections/lda.md)
 * [Review](sections/review.md)
-* [Appendix: Visualizations](sections/visualizations.md)
-* [Resources](sections/resources.md)  
+* [Resources](sections/resources.md) 
+* [Appendix: Visualize the Decision Boundary ](sections/decision_boundary.md)
+* [Appendix: Create a Word Cloud](sections/word_cloud.md)
+ 
 
 -----
 
 Session leaders: Rachel Rakov and Hannah Aizenman  
-Based on previous work by: Rachel Rakov and Hannah Aizenman  
+Based on previous work by: Rachel Rakov and Hannah Aizenman 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 

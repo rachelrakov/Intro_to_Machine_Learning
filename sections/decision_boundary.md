@@ -1,7 +1,6 @@
-# Appendix: Visualizations
-
-
-## Step 3b: Visualize the decision boundary
+Appendix: Visualize the decision boundary
+================================
+This appendix walks through the decision boundary visualizations found in the discussion of [supervised_classification](supervised_classification.md)
 
 First we go through the steps of feeding the data into the algorithm because we will need the attributes of the model for the visualization. 
 
@@ -101,6 +100,8 @@ fig.savefig("images/both.png", bbox_inches = 'tight', pad_inches = 0)
 ![The dark gray line in the figure is the decision boundary that the *LinearSVC* classifier found for this set of training data. All the data (dots) to the left of the gray line in the area with the orange background are classified as romance, while all the data to the right in the blue area are classified as news. The leftward skew of the classification space is due to the data being very dense and highly overlapping. Visualization of the decision boundary of the scatter plot found via the fit method. Here we have two plots: the decision boundary generated from the training data, and the testing data plotted against the decision boundary](../images/both.png)
 
 ## Generating a wordcloud from frequencies
+This appendix walks through the word cloud visualization found in the discussion of [Bag of Words](bag_of_words.md) feature extraction.
+
 `CountVectorizer` computes the frequency of each word in each document. In the Brown corpus, each sentence is fairly short and so it is fairly common for all the words to appear only once. For a word cloud, we want to find a sentence with a variety of frequencies. We convert `tf` to an array because tf is natively a sparse matix, which is not navigable in the same way as other data structures.
 
 ```python

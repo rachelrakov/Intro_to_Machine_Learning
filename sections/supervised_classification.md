@@ -32,7 +32,7 @@ classifier.fit(X_train, y_train)
          multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
          verbose=0)
 ```
-As mentioned above, LinearSVC, which is a linear model for classification that separates classes using a line, a plane, or a hyperplane. The `classifier.fit` method searches for that line, plane, or hyperplane-which is also called the decision boundary. The dark gray line in the figure below is the decision boundary that the *LinearSVC* classifier found for this set of training data. All the data (dots) to the left of the gray line in the area with the orange background are classified as romance, while all the data to the right in the blue area are classified as news. The leftward skew of the classification space is due to the data being very dense and highly overlapping.
+As mentioned above, LinearSVC, which is a linear model for classification that separates classes using a line, a plane, or a hyperplane. The `classifier.fit` method searches for that line, plane, or hyperplane-which is also called the decision boundary. The dark gray line in the figure below is the decision boundary that the *LinearSVC* classifier found for this set of training data. All the data (dots) to the left of the gray line in the area with the orange background are classified as romance, while all the data to the right in the blue area are classified as news. The leftward skew of the classification space is due to the data being very dense and highly overlapping. The creation of this visualization is discussed in an [appendix](decision_boundary.md).
 
 ![Visualization of the decision boundary of the scatter plot found via the fit method.](../images/training_boundary.png)
 
