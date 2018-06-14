@@ -1,4 +1,4 @@
-[<<< Previous](lda.md) |
+[<<< Previous](lda.md) |  [Next >>>](resources.md)
 # Workshop Debrief
 
 At the end of this workshop, we have covered the following skills:
@@ -11,3 +11,5 @@ At the end of this workshop, we have covered the following skills:
 - How to visualize observations, aggregations, and algorithmic results
 
 For further readings, projects, and advice, refer to the [Resources](sections/resources.md) page.
+
+[<<< Previous](lda.md) |  [Next >>>](resources.md)

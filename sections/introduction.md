@@ -30,7 +30,6 @@ In this workshop, we are going to learn how to go through the process of doing *
 
 - *supervised machine learning*:  a machine learning task of learning a function that maps an input to an output based on example input-output pairs
 
-
 - *unsupervised machine learning*: a machine learning task used to draw inferences from datasets consisting of input data without labelled responses (lacks input-output pairs; only has input data)
 
 

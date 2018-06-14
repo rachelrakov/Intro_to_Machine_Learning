@@ -65,7 +65,7 @@ fig.savefig("images/romance_scatter.png", bbox_inches = 'tight', pad_inches = 0)
 
 ### How do we visualize dense, highly overlapping data? 
 
-As seen above, when the data is very dense the points can sometimes overlap. One way to visualize this overlapping data is to shift each point by a tiny amount so that the data is no longer at exactly the same coordinate. This technique is called *jittering*. In the `jitter` function below, we compute a scale factor by which to multiply random numbers between 0 and 1 so that the jitter is large enough to effect the visualization. 
+As seen above, when the data is very dense the points can sometimes overlap. One way to visualize this overlapping data is to shift each point by a tiny amount so that the data is no longer at exactly the same coordinate. This technique is called *jittering*. In the `jitter` function below, we compute a scale factor by which to multiply random numbers between 0 and 1 so that the jitter is large enough to effect the visualization, but small enough that it does not strongly distort the data. 
 
 
 ```python

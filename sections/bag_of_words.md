@@ -80,7 +80,7 @@ df['sentence'].head()
 
 
 ### Bag of Words
-We preprocess our data using sklearn's text feature extraction tools. In particular, we use the `CountVectorizer` which computes the frequency of each token in the document. We can strip out *stop words* (words that are so common they don't add to the data analysis, such as "the" and "a") using the `stop_words` keyword argument.
+We preprocess our data using sklearn's text feature extraction tools. In particular, we use the `CountVectorizer` which computes the frequency of each token in the document. We can strip out *stop words* (words that are so common they don't add to the data analysis, such as "the" and "a") using the `stop_words` keyword argument. A keyword argument is an optional function parameter. 
 
 
 ```python
@@ -90,7 +90,9 @@ tf_vectorizer = CountVectorizer(stop_words='english')
 tf = tf_vectorizer.fit_transform(df['sentence'])
 ```
 
-`CountVectorizer` processes the text such that `tf` is a sparse matrix containing the count of words in each document. One document in the Brown corpus is the following sentence: 
+`CountVectorizer` processes the text such that `tf` is a sparse matrix containing the count of words in each document. A matrix is a table of numbers, and a sparse matrix is a table where most of those numbers are 0. `tf` is mostly 0 because many words only appear in a handful of the many documents that make up our sample corpus. 
+
+One document in the Brown corpus is the following sentence: 
 >Mrs. Robert O. Spurdle is chairman of the committee , which includes Mrs. James A. Moody , Mrs. Frank C. Wilkinson , Mrs. Ethel Coles , Mrs. Harold G. Lacy , Mrs. Albert W. Terry , Mrs. Henry M. Chance , 2d , Mrs. Robert O. Spurdle , Jr. , Mrs. Harcourt N. Trimble , Jr. , Mrs. John A. Moller , Mrs. Robert Zeising , Mrs. William G. Kilhour , Mrs. Hughes Cauffman , Mrs. John L. Baringer and Mrs. Clyde Newman .
 
 Through the `CountVectorizer` command, the stop words, punctuation, and very low frequency words have been removed. This yeilds the words and their counts, which are listed and also visualized in a word cloud below. 
